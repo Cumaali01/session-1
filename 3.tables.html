@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{ width: 100%;
+            border-collapse: collapse;
+            border: 5px solid red;
+        }
+        
+        td,th{
+            border: 3px solid yellowgreen;
+            padding: 5px;
+            text-align:center;
+        }
+        tr:nth-child(odd){
+            background-color: aquamarine;
+        }
+    </style>
+
+<body>
+    </head>
+    <table border="1">
+        <thead > <br>
+            <caption> <b style="font-size:  2em;;">Weekly Classes</b> </caption>
+            <tr>
+                <th>Day</th>
+                <th>Lesson</th>
+                <th>Teacher</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td>React</td>
+                <td>Robert</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Wednesday</td>
+                <td>CSS</td>
+                <td>Harvey</td>
+            </tr>
+            <tr>
+                <!-- <td>Wednesday</td> -->
+                <td>React-Native</td>
+                <td>Kevin</td>
+            </tr>
+            <tr>
+                <td>Thursaday</td>
+                <td>Django</td>
+                <td>Alex</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>Java</td>
+                <td rowspan="2">Alisson</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>HTML</td>
+                <!-- <td>Linda</td> -->
+            </tr>
+            <tr>
+                <td colspan="3">Sunday is holiday</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>
